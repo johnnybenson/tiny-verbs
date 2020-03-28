@@ -1,0 +1,11 @@
+require:
+ - rubocop-airbnb
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/OptionHash:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 204

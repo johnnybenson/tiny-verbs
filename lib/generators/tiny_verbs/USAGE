@@ -1,0 +1,9 @@
+Description:
+    TinyVerbs Service & Service::Action Generator. Scaffolds service namespace and actions.
+
+Example:
+    rails generate tiny_verbs:service --service pizza
+    rails generate tiny_verbs:action --service pizza --action apply_topping
+
+    This will create:
+        Creates `app/services/pizza_service.rb` and `app/services/pizza_service/*.rb` files
