@@ -1,0 +1,29 @@
+# frozen_string_literal: true
+
+require '<%= Rails.present? ? "rails_helper" : "spec_helper" -%>'
+
+RSpec.describe <% action_class %> do
+  subject { service }
+
+  # Action Build
+  let(:service) { described_class.build(**dependencies) }
+  let(:dependencies) do
+    {
+      # Add Dependencies ...
+    }
+  end
+
+  # Action Call
+  let(:call) { service.call(params) }
+  let(:params) do
+    {
+      # Add Parameters ...
+    }
+  end
+
+  describe "#call" do
+    subject { call }
+
+    # it { is_expected.to eq(true) }
+  end
+end
